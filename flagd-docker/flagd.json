@@ -1,0 +1,32 @@
+
+{
+  "flags": {
+    "isfromproductdock": {
+      "state": "ENABLED",
+      "variants": {
+        "on": true,
+        "off": false
+      },
+      "defaultVariant": "off",
+      "targeting": {
+        "if": [
+          {
+            "$ref": "isFromProductDock"
+          },
+          "on",
+          null
+        ]
+      }
+    }
+  },
+  "$evaluators": {
+    "isFromProductDock": {
+      "in": [
+        "@productdock.com",
+        {
+          "var": ["Email"]
+        }
+      ]
+    }
+  }
+}

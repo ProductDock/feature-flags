@@ -35,8 +35,32 @@
         </dependency>
         <dependency>
             <groupId>io.quarkus</groupId>
-            <artifactId>quarkus-junit5</artifactId>
-            <scope>test</scope>
+            <artifactId>quarkus-resteasy-reactive-jackson</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-logging-json</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>dev.openfeature</groupId>
+            <artifactId>sdk</artifactId>
+            <version>1.7.0</version>
+        </dependency>
+        <dependency>
+            <groupId>dev.openfeature.contrib.providers</groupId>
+            <artifactId>flagd</artifactId>
+            <version>0.6.7</version>
+        </dependency>
+        <dependency>
+            <groupId>dev.openfeature.contrib.providers</groupId>
+            <artifactId>configcat</artifactId>
+            <version>0.0.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.devcycle</groupId>
+            <artifactId>java-server-sdk</artifactId>
+            <version>2.1.0</version>
         </dependency>
     </dependencies>
     <build>
